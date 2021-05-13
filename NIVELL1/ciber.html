@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Ex1</title>
+</head>
+<body>
+
+    <p> Resultat de 10 - 2 </p>
+    <p id="resposta"></p>
+
+    <script>
+
+        /* NIVELL 2 */
+        
+        /* EXERCICI 1 */
+        console.log("Hola Mundo");
+
+        /* EXERCICI 2 */
+        alert("Em dic Neus");
+
+        /* EXERCICI 3 */
+        var nom = "Neus ";
+        var cognom = "Arboledas";
+        console.log(nom + cognom);
+
+        /* EXERCICI 4 */
+        var num1 = 5;
+		var num2 = 7;
+		var suma = num1 + num2;
+
+		console.log("La suma entre " + num1 + " i " + num2 + " es " + suma);
+
+        /* EXERCICI 5 */
+        var notaExamen = 4;
+		var missatge = "";
+
+		if (notaExamen > 5) {
+			missatge = " Has aprovat amb un " + notaExamen;
+		} else {
+			missatge = "Ohh, has suspès l'examen amb un " + notaExamen;
+		}
+
+		alert(missatge);
+
+        /* EXERCICI 6 */
+        var frase1 = "Tinc un cotxe de color verd";
+        console.log(frase1);
+        
+        var frase2 = frase1.replace("verd", "blau");
+        console.log(frase2)
+        var frase3 = frase2.replace(/o/g,"u");
+        console.log(frase3);
+
+        /* EXERCICI 7 */
+        var llistat=["taula", "cadira", "ordinador", "llibreta"];
+        for (let i=0; i<llistat.length; i++){
+            console.log("L'objecte " + llistat[i] + " està en la posició " + i);
+        }
+
+        /* EXERCICI 8 */
+        function calculadora (operador, valor1, valor2){
+            if (operador === "+"){
+                return valor1 + valor2;
+            }
+            else if (operador === "-"){
+                return valor1 - valor2;
+            }
+            else if (operador === "*"){
+                return valor1 * valor2
+            }
+            
+        }
+        var resultat = (calculadora("-", 10, 2));
+        document.getElementById("resposta").innerHTML= resultat;
+
+        
+
+         
+
+    </script>
+    
+</body>
+</html>
